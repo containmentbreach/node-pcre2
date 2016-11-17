@@ -1,0 +1,48 @@
+Change Log for JPCRE2
+--------------------
+
+
+Version 10.28.03 - Mon Oct 31 22:24:29 UTC 2016
+-----------------------------------------------
+
+* Remove convert16 and convert32 global variable.
+* Add convert16 and convert32 typedefs.
+
+
+Version 10.28.02 - Mon Oct 31 21:00:32 UTC 2016
+-----------------------------------------------
+
+1. Remove PCRE2_CODE_UNIT_WIDTH quirks.
+2. Provide portable coding approach.
+3. Converted to header only library.
+
+
+Version 10.27.03 - Tue Oct 25 19:12:07 UTC 2016
+-----------------------------------------------
+
+* Fix multi code unit wdith support
+* Add example for handling multi code unit width
+
+Version 10.27.02 - Sat Sep 24 23:50:57 UTC 2016
+-----------------------------------------------
+
+* Fix issue #6 and #7
+
+Version 10.27.01 - Fri Sep 23 09:01:10 UTC 2016
+-----------------------------------------------
+
+* New API with 8 bit, 16 bit and 32 bit support
+* Add templated struct `jpcre2::select8` to select 8 bit code unit width
+* Add templated struct `jpcre2::select16` to select 16 bit code unit width
+* Add templated struct `jpcre2::select32` to select 32 bit code unit width
+* When using a single code unit width, corresponding struct can be used with `jpcre2::select` (without the suffix)
+* Support `char` (`std::string`), `wchar_t` (`std::wstring`), `char16_t` (`std::u16string`), `char32_t` (`std::u32string`)
+* `reset()` and `resetErrors()` can be called from anywhere in the method chain.
+
+
+Version 10.26.02 - Sun Sep 11 15:37:00 UTC 2016
+-----------------------------------------------
+
+* `Regex::match()` and its overloads will call `getMatchObject()` instead of `initMatch()`
+* `Regex::replace()` and its overloads will call `getReplaceObject()` instead of `initReplace()` 
+
