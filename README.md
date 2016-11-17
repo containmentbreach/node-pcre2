@@ -21,7 +21,7 @@ Install
 USAGE
 =====
 
-...
+```
 var PCRE2 = require("pcre2").PCRE2;
 var PCRE2JIT = require("pcre2").PCRE2JIT; //better performance, longer regex compiling, usually you dont need this class instead of first one.
 
@@ -34,7 +34,7 @@ var output = re.exec("abc123abc123");
 //   1:"123"
 //   index:0
 //   input:"abc123abc123"
-...
+```
 
 API
 ===
