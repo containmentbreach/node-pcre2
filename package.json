@@ -1,5 +1,5 @@
 { "name": "pcre2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/Kamil93/node-pcre2",
   "repository": {
     "type": "git",
