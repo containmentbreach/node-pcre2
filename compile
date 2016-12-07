@@ -5,5 +5,5 @@ mkdir -p build_pcre2/
 cd deps/pcre2/
 
 ./configure --with-parens-nest-limit=50000 --with-match-limit=500000000 --disable-stack-for-recursion --enable-static --disable-shared --with-pic --prefix=$PWD/../../build_pcre2/
-gmake
-gmake install
+make
+make install
